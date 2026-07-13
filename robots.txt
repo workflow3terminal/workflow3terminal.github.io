@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /docs/
+Disallow: /scripts/
+Disallow: /remotion-character-shorts/
+Disallow: /output/
+Sitemap: https://workflow3terminal.github.io/sitemap.xml

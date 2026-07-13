@@ -1,0 +1,10 @@
+{
+  "name": "David Ducháč",
+  "short_name": "David",
+  "description": "Personal commercial site and selected work of David Ducháč.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0b0b0c",
+  "theme_color": "#0b0b0c",
+  "icons": []
+}
