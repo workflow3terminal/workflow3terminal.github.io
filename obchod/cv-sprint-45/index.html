@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV SPRINT 45 — cílené CV + pohovor s AI</title>
+  <meta name="description" content="Z jednoho inzerátu a reálného CV k odesílatelné přihlášce a přípravě na pohovor za jeden soustředěný blok. CZ/EN kit bez vymyšlených metrik.">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../styles.css?v=20260717">
+  <link rel="stylesheet" href="../../css/chapters.css?v=20260717">
+  <link rel="stylesheet" href="../../css/components.css?v=20260717">
+  <style>
+    .product-hero { display: grid; grid-template-columns: 1.1fr .9fr; gap: 2rem; align-items: end; margin-top: 1rem; }
+    .product-hero img.cover { width: 100%; border: 3px solid #25211c; box-shadow: 8px 8px 0 #25211c; }
+    .price-tag { display: inline-block; margin: 1rem 0; padding: .55rem 1rem; background: #9cff46; color: #050509; font-weight: 900; text-transform: uppercase; border: 2px solid #25211c; }
+    .buy-bar { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; margin-top: 1.5rem; }
+    .buy-bar a.primary, .buy-bar button.primary {
+      display: inline-flex; align-items: center; justify-content: center; min-height: 3.2rem; padding: 0 1.4rem;
+      background: #25211c; color: #fff; font-weight: 900; text-transform: uppercase; text-decoration: none; border: 0; cursor: pointer;
+    }
+    .buy-bar a.secondary { color: #25211c; font-weight: 900; text-transform: uppercase; }
+    .feature-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: 2rem; }
+    .feature-grid article { padding: 1rem; border: 2px solid #25211c; background: #f5f0e6; }
+    .gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: 2rem; }
+    .gallery img { width: 100%; border: 2px solid #25211c; }
+    .legal-note { margin-top: 2rem; font-size: .92rem; line-height: 1.55; color: #4a443c; }
+    @media (max-width: 860px) {
+      .product-hero, .feature-grid, .gallery { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body class="inner-page" style="background:#cbc2b5">
+  <a class="skip-link" href="#main">Přeskočit na obsah</a>
+  <header class="site-header is-scrolled" data-site-header>
+    <a class="brand" href="../../"><span class="brand-mark">D</span><span class="brand-name">David Ducháč</span></a>
+    <nav class="desktop-nav" aria-label="Hlavní navigace"><a href="../../#character-prism">Práce</a><a href="../../#outcomes">Nabídka</a><a href="../">Nástroje</a><a href="../../about/">David</a></nav>
+    <div class="header-actions"><a class="language-link" href="../../en/" lang="en">EN</a><a class="header-contact" href="../../contact/">Domluvit hovor</a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu"><span class="sr-only">Otevřít menu</span><i></i><i></i></button></div>
+  </header>
+  <nav class="mobile-menu" id="mobile-menu" aria-hidden="true"><a href="../../">Domů</a><a href="../">Nástroje</a><a href="../../contact/">Kontakt</a></nav>
+
+  <main id="main" class="shop-preview shop-page">
+    <div class="shop-window">
+      <header>
+        <p class="chapter-index"><span>LIVE</span> digitální produkt</p>
+        <h1 class="shop-title">CV SPRINT 45</h1>
+        <p>Jeden inzerát. Jedno pravdivé CV. Jedna ostrá přihláška — bez vymyšlených metrik a generického AI textu.</p>
+      </header>
+
+      <section class="product-hero">
+        <div>
+          <img class="cover" src="assets/cover.png" alt="Obálka CV SPRINT 45 — launch edition">
+          <p class="legal-note">Digitální produkt. Osobní licence. Okamžité stažení po zaplacení. Neprodává zaměstnání ani garanci pohovoru — prodává rychlejší a bezpečnější proces.</p>
+        </div>
+        <div>
+          <p class="price-tag">Launch 429 Kč vč. DPH</p>
+          <p>6stránkový PDF playbook, 45min workflow, 12 copy-paste AI příkazů, STAR worksheet, tři ukázky vstup → výstup a editovatelné Markdown soubory v jednom ZIPu.</p>
+          <div class="buy-bar">
+            <a class="primary" id="buy-now" href="#" hidden>Koupit teď — Stripe</a>
+            <button class="primary" id="buy-pending" type="button" disabled>Paygate se aktivuje</button>
+            <a class="secondary" id="download-zip" href="#" download="CV_SPRINT_45_LAUNCH_EDITION.zip">Už zaplaceno? Stáhnout ZIP</a>
+            <a class="secondary" href="../">← zpět do shopu</a>
+          </div>
+          <p id="download-status" aria-live="polite"></p>
+          <p id="paygate-status" aria-live="polite">Stripe checkout se právě zapojuje. Paygate bude aktivní hned po dokončení W3 onboarding kroku.</p>
+        </div>
+      </section>
+
+      <section class="feature-grid" aria-label="Co je uvnitř">
+        <article><strong>01</strong><h3>6stránkový playbook</h3><p>Profesionálně vysázený PDF návod pro CZ i EN přihlášky.</p></article>
+        <article><strong>02</strong><h3>45min workflow</h3><p>Přesný postup + jednostránkový quick plan pro jeden soustředěný blok.</p></article>
+        <article><strong>03</strong><h3>12 AI příkazů</h3><p>Copy-paste prompty včetně nouzového master příkazu.</p></article>
+        <article><strong>04</strong><h3>STAR worksheet</h3><p>Tisknutelný list pro pravdivé pohovorové příběhy bez vymyšlených metrik.</p></article>
+      </section>
+
+      <section class="gallery" aria-label="Náhledy">
+        <img src="assets/quick-plan.png" alt="Náhled quick plan stránky">
+        <img src="assets/cover.png" alt="Druhý náhled obálky produktu">
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer"><p>© <span data-year>2026</span> David Ducháč · provozováno Workflow 3 pool</p><nav><a href="../../privacy/">Soukromí</a><a href="../../contact/">Kontakt</a></nav><p>Pro koho: uchazeči s reálnými zkušenostmi, kteří je potřebují rychle přeložit do jazyka konkrétní pozice.</p></footer>
+  <script type="module" src="../../script.js?v=20260717"></script>
+  <script src="paygate-config.js"></script>
+  <script src="force-zip-download.js"></script>
+  <script>
+    (function () {
+      var cfg = window.W3_PAYGATE && window.W3_PAYGATE.cv_sprint_45;
+      var buy = document.getElementById('buy-now');
+      var pending = document.getElementById('buy-pending');
+      var status = document.getElementById('paygate-status');
+      if (cfg && cfg.stripePaymentLink && cfg.stripePaymentLink !== 'PENDING') {
+        buy.href = cfg.stripePaymentLink;
+        buy.hidden = false;
+        pending.hidden = true;
+        status.textContent = 'Paygate aktivní. Po zaplacení přesměrujeme na stránku se stažením.';
+      }
+      window.W3ForceZipDownload.bindZipDownload('download-zip', 'download-status', cfg);
+    })();
+  </script>
+</body>
+</html>

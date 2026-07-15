@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Děkujeme — Working Professional Prompt Stack</title>
+  <link rel="icon" href="../../../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../../styles.css?v=20260715">
+  <link rel="stylesheet" href="../../../css/chapters.css?v=20260715">
+  <link rel="stylesheet" href="../../../css/components.css?v=20260715">
+</head>
+<body class="inner-page" style="background:#cbc2b5">
+  <a class="skip-link" href="#main">Přeskočit na obsah</a>
+  <header class="site-header is-scrolled" data-site-header>
+    <a class="brand" href="../../../"><span class="brand-mark">D</span><span class="brand-name">David Ducháč</span></a>
+    <nav class="desktop-nav" aria-label="Hlavní navigace"><a href="../../../#character-prism">Práce</a><a href="../../">Nástroje</a><a href="../../../contact/">Kontakt</a></nav>
+    <div class="header-actions"><a class="header-contact" href="../../../contact/">Domluvit hovor</a></div>
+  </header>
+  <main id="main" class="shop-preview shop-page">
+    <div class="shop-window">
+      <header>
+        <p class="chapter-index"><span>STAŽENÍ</span> Working Professional Stack</p>
+        <h1 class="shop-title">Děkujeme za nákup.</h1>
+        <p>Po zaplacení stáhněte ZIP s pěti Markdown soubory. Prohlížeč by měl stáhnout soubor <strong>.zip</strong>, ne rozbalenou složku.</p>
+      </header>
+      <p>
+        <a class="shop-link" id="download-zip" href="#" download="Working_Professional_Prompt_Stack.zip">
+          Stáhnout Working_Professional_Prompt_Stack.zip <span>→</span>
+        </a>
+      </p>
+      <p id="download-status" aria-live="polite"></p>
+      <p>První krok: otevřete <code>START_HERE_Which_Pack_When.md</code> a vyberte pack podle dnešního problému.</p>
+      <a class="shop-link" href="../../">← zpět do shopu</a>
+    </div>
+  </main>
+  <footer class="site-footer"><p>© <span data-year>2026</span> David Ducháč</p></footer>
+  <script src="../paygate-config.js"></script>
+  <script src="../force-zip-download.js"></script>
+  <script>
+    window.W3ForceZipDownload.bindZipDownload(
+      'download-zip',
+      'download-status',
+      window.W3_PAYGATE && window.W3_PAYGATE.working_professional_stack
+    );
+  </script>
+</body>
+</html>
