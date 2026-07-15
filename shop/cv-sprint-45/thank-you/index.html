@@ -6,9 +6,9 @@
   <title>Děkujeme — CV SPRINT 45</title>
   <meta name="robots" content="noindex">
   <link rel="icon" href="../../../favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../../../styles.css?v=20260717">
-  <link rel="stylesheet" href="../../../css/chapters.css?v=20260717">
-  <link rel="stylesheet" href="../../../css/components.css?v=20260717">
+  <link rel="stylesheet" href="../../../styles.css?v=20260717b">
+  <link rel="stylesheet" href="../../../css/chapters.css?v=20260717b">
+  <link rel="stylesheet" href="../../../css/components.css?v=20260717b">
 </head>
 <body class="inner-page" style="background:#cbc2b5">
   <main id="main" class="shop-preview shop-page">
@@ -16,13 +16,26 @@
       <header>
         <p class="chapter-index"><span>OK</span> platba přijata</p>
         <h1 class="shop-title">Stáhněte kit</h1>
-        <p>Pokud jste právě zaplatili, váš nákup by měl být zpracován. Tlačítko níže vede na launch edition ZIP.</p>
+        <p>Po zaplacení stáhněte launch edition ZIP. Prohlížeč by měl stáhnout soubor <strong>.zip</strong>, ne rozbalenou složku.</p>
       </header>
-      <p><a class="shop-link" href="../../../downloads/cv-sprint-45/CV_SPRINT_45_LAUNCH_EDITION.zip">Stáhnout CV SPRINT 45 ZIP <span>→</span></a></p>
-      <p>Problém se stažením? Napište na kontaktní formulář a uveďte e-mail z platby.</p>
+      <p>
+        <a class="shop-link" id="download-zip" href="#" download="CV_SPRINT_45_LAUNCH_EDITION.zip">
+          Stáhnout CV SPRINT 45 ZIP <span>→</span>
+        </a>
+      </p>
+      <p id="download-status" aria-live="polite"></p>
+      <p>Problém se stažením? Napište na <a href="../../contact/">kontakt</a> a uveďte e-mail z platby.</p>
       <p><a href="../">← zpět na produkt</a></p>
     </div>
   </main>
-  <script type="module" src="../../../script.js?v=20260717"></script>
+  <script type="module" src="../../../script.js?v=20260717b"></script>
+  <script src="../paygate-config.js"></script>
+  <script src="../force-zip-download.js"></script>
+  <script>
+    (function () {
+      var cfg = window.W3_PAYGATE && window.W3_PAYGATE.cv_sprint_45;
+      window.W3ForceZipDownload.bindZipDownload("download-zip", "download-status", cfg);
+    })();
+  </script>
 </body>
 </html>

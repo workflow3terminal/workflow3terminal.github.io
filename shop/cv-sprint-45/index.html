@@ -57,8 +57,10 @@
           <div class="buy-bar">
             <a class="primary" id="buy-now" href="#" hidden>Koupit teď — Stripe</a>
             <button class="primary" id="buy-pending" type="button" disabled>Paygate se aktivuje</button>
+            <a class="secondary" id="download-zip" href="#" download="CV_SPRINT_45_LAUNCH_EDITION.zip">Už zaplaceno? Stáhnout ZIP</a>
             <a class="secondary" href="../">← zpět do shopu</a>
           </div>
+          <p id="download-status" aria-live="polite"></p>
           <p id="paygate-status" aria-live="polite">Stripe checkout se právě zapojuje. Paygate bude aktivní hned po dokončení W3 onboarding kroku.</p>
         </div>
       </section>
@@ -80,6 +82,7 @@
   <footer class="site-footer"><p>© <span data-year>2026</span> David Ducháč · provozováno Workflow 3 pool</p><nav><a href="../../privacy/">Soukromí</a><a href="../../contact/">Kontakt</a></nav><p>Pro koho: uchazeči s reálnými zkušenostmi, kteří je potřebují rychle přeložit do jazyka konkrétní pozice.</p></footer>
   <script type="module" src="../../script.js?v=20260717"></script>
   <script src="paygate-config.js"></script>
+  <script src="force-zip-download.js"></script>
   <script>
     (function () {
       var cfg = window.W3_PAYGATE && window.W3_PAYGATE.cv_sprint_45;
@@ -92,6 +95,7 @@
         pending.hidden = true;
         status.textContent = 'Paygate aktivní. Po zaplacení přesměrujeme na stránku se stažením.';
       }
+      window.W3ForceZipDownload.bindZipDownload('download-zip', 'download-status', cfg);
     })();
   </script>
 </body>
