@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Working Professional Prompt Stack — job search, EN & freelance</title>
+  <meta name="description" content="Tři prompt balíčky v jednom ZIPu: hledání práce, business English a freelance hranice. Copy-paste pro ChatGPT/Claude. Osobní licence, bez vymyšlených garancí.">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../styles.css?v=20260715">
+  <link rel="stylesheet" href="../../css/chapters.css?v=20260715">
+  <link rel="stylesheet" href="../../css/components.css?v=20260715">
+  <style>
+    .product-hero { display: grid; grid-template-columns: 1.1fr .9fr; gap: 2rem; align-items: end; margin-top: 1rem; }
+    .product-hero .cover-wrap {
+      display: grid; place-items: center; min-height: 16rem; padding: 2rem;
+      border: 3px solid #25211c; box-shadow: 8px 8px 0 #25211c; background: #f5f0e6;
+    }
+    .product-hero .cover-wrap img { width: 8rem; image-rendering: pixelated; }
+    .price-tag { display: inline-block; margin: 1rem 0; padding: .55rem 1rem; background: #9cff46; color: #050509; font-weight: 900; text-transform: uppercase; border: 2px solid #25211c; }
+    .buy-bar { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; margin-top: 1.5rem; }
+    .buy-bar a.primary, .buy-bar button.primary {
+      display: inline-flex; align-items: center; justify-content: center; min-height: 3.2rem; padding: 0 1.4rem;
+      background: #25211c; color: #fff; font-weight: 900; text-transform: uppercase; text-decoration: none; border: 0; cursor: pointer;
+    }
+    .buy-bar button.primary[disabled] { opacity: .55; cursor: not-allowed; }
+    .buy-bar a.secondary { color: #25211c; font-weight: 900; text-transform: uppercase; }
+    .feature-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: 2rem; }
+    .feature-grid article { padding: 1rem; border: 2px solid #25211c; background: #f5f0e6; }
+    .pack-list { margin-top: 2rem; padding: 1.2rem; border: 2px solid #25211c; background: #fffaf0; }
+    .pack-list li { margin: .5rem 0; line-height: 1.5; }
+    .legal-note { margin-top: 2rem; font-size: .92rem; line-height: 1.55; color: #4a443c; }
+    @media (max-width: 860px) {
+      .product-hero, .feature-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body class="inner-page" style="background:#cbc2b5">
+  <a class="skip-link" href="#main">Přeskočit na obsah</a>
+  <header class="site-header is-scrolled" data-site-header>
+    <a class="brand" href="../../"><span class="brand-mark">D</span><span class="brand-name">David Ducháč</span></a>
+    <nav class="desktop-nav" aria-label="Hlavní navigace"><a href="../../#character-prism">Práce</a><a href="../../#outcomes">Nabídka</a><a href="../">Nástroje</a><a href="../../about/">David</a></nav>
+    <div class="header-actions"><a class="language-link" href="../../en/" lang="en">EN</a><a class="header-contact" href="../../contact/">Domluvit hovor</a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu"><span class="sr-only">Otevřít menu</span><i></i><i></i></button></div>
+  </header>
+  <nav class="mobile-menu" id="mobile-menu" aria-hidden="true"><a href="../../">Domů</a><a href="../">Nástroje</a><a href="../../contact/">Kontakt</a></nav>
+
+  <main id="main" class="shop-preview shop-page">
+    <div class="shop-window">
+      <header>
+        <p class="chapter-index"><span>PAYGATE BRZY</span> digitální produkt</p>
+        <h1 class="shop-title">Working Professional Prompt Stack</h1>
+        <p>Přestaňte zírat do prázdného chatu. Tři knihovny promptů pro práci, angličtinu a freelance — copy-paste pro ChatGPT nebo Claude.</p>
+      </header>
+
+      <section class="product-hero">
+        <div>
+          <div class="cover-wrap">
+            <img src="../../assets/site/pixel/call-script.svg" alt="Pixel ikona Working Professional Stack">
+          </div>
+          <p class="legal-note">Digitální produkt. Osobní licence. ZIP s Markdown soubory (PDF si exportujete sami, pokud chcete). Neprodává práci, klienty ani garanci odpovědí — prodává rychlejší psaní s AI, které kontrolujete vy.</p>
+        </div>
+        <div>
+          <p class="price-tag">1 040 Kč vč. DPH (~$49 bundle)</p>
+          <p>5 souborů v jednom ZIPu: START_HERE průvodce, Job Search pack, Business English pack, Freelance Client Control pack a README. Hotové od března 2026 — W2 sell_ready, Gumroad copy existuje.</p>
+          <div class="buy-bar">
+            <a class="primary" id="buy-now" href="#" hidden>Koupit teď — Stripe</a>
+            <button class="primary" id="buy-pending" type="button" disabled>Paygate se aktivuje</button>
+            <a class="secondary" id="download-zip" href="#" download="Working_Professional_Prompt_Stack.zip">Už zaplaceno? Stáhnout ZIP</a>
+            <a class="secondary" href="../contact/?interest=working-professional-stack">Chci vědět první</a>
+            <a class="secondary" href="../">← zpět do shopu</a>
+          </div>
+          <p id="download-status" aria-live="polite"></p>
+          <p id="paygate-status" aria-live="polite">Stripe checkout se právě zapojuje. Paygate bude aktivní po dokončení W3 onboarding kroku — stejně jako u CV SPRINT 45.</p>
+        </div>
+      </section>
+
+      <section class="feature-grid" aria-label="Co je uvnitř">
+        <article><strong>01</strong><h3>Job Search pack</h3><p>CV, LinkedIn, pohovory, cover letter, recruiter zprávy a salary framing.</p></article>
+        <article><strong>02</strong><h3>Business English pack</h3><p>E-mail, Slack, omluvy, eskalace, meeting invite a profesionální tón.</p></article>
+        <article><strong>03</strong><h3>Freelance pack</h3><p>Scope, SOW, scope creep, faktury, zvyšování sazby a ukončení klienta.</p></article>
+        <article><strong>04</strong><h3>START_HERE průvodce</h3><p>2min rozhodnutí, který pack otevřít podle dnešního problému.</p></article>
+      </section>
+
+      <section class="pack-list" aria-label="Pro koho">
+        <h2>Pro koho</h2>
+        <ul>
+          <li>Uchazeči o práci, kteří chtějí konkrétní prompty místo generického „napiš mi CV“.</li>
+          <li>Profesionálové píšící anglicky jako druhý jazyk — e-mail, Slack, šéf, klient.</li>
+          <li>Freelanceři, kteří potřebují hranice, change-order jazyk a peníze v textu.</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer"><p>© <span data-year>2026</span> David Ducháč · W2 sell_ready · W3 pool delivery</p><nav><a href="../../privacy/">Soukromí</a><a href="../../contact/">Kontakt</a></nav><p>AI výstup kontrolujete vy — fakta, jména, čísla a právní hrany.</p></footer>
+  <script type="module" src="../../script.js?v=20260715"></script>
+  <script src="paygate-config.js"></script>
+  <script src="force-zip-download.js"></script>
+  <script>
+    (function () {
+      var cfg = window.W3_PAYGATE && window.W3_PAYGATE.working_professional_stack;
+      var buy = document.getElementById('buy-now');
+      var pending = document.getElementById('buy-pending');
+      var status = document.getElementById('paygate-status');
+      if (cfg && cfg.stripePaymentLink && cfg.stripePaymentLink !== 'PENDING') {
+        buy.href = cfg.stripePaymentLink;
+        buy.hidden = false;
+        pending.hidden = true;
+        status.textContent = 'Paygate aktivní. Po zaplacení přesměrujeme na stránku se stažením.';
+      }
+      window.W3ForceZipDownload.bindZipDownload('download-zip', 'download-status', cfg);
+    })();
+  </script>
+</body>
+</html>
